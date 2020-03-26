@@ -1,12 +1,15 @@
 package com.example.userldap;
 
-import org.springframework.web.bind.annotation.GetMapping;
+
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController{
-    @GetMapping("/")
-    public String home(){
-        return ("<h1>Welcome to home page</h1>");
+    @RequestMapping("/")
+    public String myHome(){
+        return "index";
     }
+
+
 }
